@@ -3,8 +3,8 @@ export const SITE_CONFIG = {
   tagline: "Style that feels like you.",
   description: "Premium women's fashion store in Jaffar Nagar, Nagpur. Kurtis, sarees, dresses, tops & more. Easy WhatsApp ordering & same-day Nagpur delivery.",
   url: "https://bombaycollection.in",
-  whatsappNumber: "919XXXXXXXXX",
-  phone: "+91 9X-XXXX-XXXX",
+  whatsappNumber: "919867861310",
+  phone: "+91 919867861310",
   email: "hello@bombaycollection.in",
   address: {
     street: "Shop No. 12, Near Jaffar Nagar Square",
