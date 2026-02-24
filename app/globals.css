@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --maroon: #8B1A2E;
+  --beige: #f8f0e0;
+  --charcoal: #2C2C2C;
+  --gold: #C4954A;
+}
+
+@layer base {
+  * {
+    @apply box-border;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-beige-50 text-charcoal-500 font-body antialiased;
+  }
+  h1, h2, h3, h4, h5 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-maroon-500 text-white font-body font-semibold px-6 py-3 text-sm tracking-wide transition-all hover:bg-maroon-600 hover:shadow-lg active:scale-95;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border-2 border-maroon-500 text-maroon-500 font-body font-semibold px-6 py-3 text-sm tracking-wide transition-all hover:bg-maroon-50 active:scale-95;
+  }
+  .btn-whatsapp {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-[#25D366] text-white font-body font-semibold px-6 py-3 text-sm tracking-wide transition-all hover:bg-[#1da851] hover:shadow-lg active:scale-95;
+  }
+  .section-title {
+    @apply font-display text-3xl md:text-4xl font-bold text-charcoal-500 leading-tight;
+  }
+  .section-subtitle {
+    @apply font-body text-base text-charcoal-400 mt-3 max-w-xl;
+  }
+  .card-hover {
+    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-xl;
+  }
+  .input-field {
+    @apply w-full rounded-lg border border-beige-200 bg-white px-4 py-3 text-sm text-charcoal-500 placeholder:text-charcoal-300 focus:border-maroon-400 focus:outline-none focus:ring-2 focus:ring-maroon-100 transition-all;
+  }
+}
+
+.pattern-bg {
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23C4954A' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, var(--maroon), var(--gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.shimmer {
+  background: linear-gradient(90deg, #f8f0e0 25%, #f2e0c0 50%, #f8f0e0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #f8f0e0; }
+::-webkit-scrollbar-thumb { background: #8B1A2E; border-radius: 3px; }

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="533" viewBox="0 0 400 533">
+  <rect width="400" height="533" fill="#F5E6CA"/>
+  <rect x="100" y="80" width="200" height="280" rx="20" fill="#8B1A2F" opacity="0.3"/>
+  <circle cx="200" cy="100" r="40" fill="#8B1A2F" opacity="0.4"/>
+  <rect x="160" y="150" width="80" height="160" rx="10" fill="#8B1A2F" opacity="0.5"/>
+  <text x="200" y="420" font-family="Georgia,serif" font-size="18" font-weight="bold" fill="#8B1A2F" text-anchor="middle" opacity="0.8">Bombay Collection</text>
+  <text x="200" y="445" font-family="Arial,sans-serif" font-size="14" fill="#8B1A2F" text-anchor="middle" opacity="0.7">Embroidered Kurta</text>
+  <text x="200" y="470" font-family="Arial,sans-serif" font-size="12" fill="#8B1A2F" text-anchor="middle" opacity="0.5">Jaffar Nagar, Nagpur</text>
+</svg>
